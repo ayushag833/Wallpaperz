@@ -8,7 +8,7 @@ const Wallpaper = () => {
 
   const [wallpaper , setWallpaper] = useState<any>(null);
   const [status, requestPermission] = MediaLibrary.usePermissions();
-
+  const api_key = "VbwtlQGuJvpleTQnpxxggojCQQbZEk2XsBIHCl26vKYHXTAZ6gRoL4sF"
 
   const {id}  = useLocalSearchParams();
 
@@ -19,7 +19,7 @@ const Wallpaper = () => {
           method: 'GET',
           headers: {
               'Content-Type': 'application/json',
-              'Authorization': "vHGblEImlLfGsGN9FH3L68JqtAEoS7V2TPZoSlJ1lQd7qNMmq88U7h0x",
+              'Authorization': api_key,
           },
       });
 

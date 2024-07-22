@@ -5,6 +5,7 @@ import { Image, View  , FlatList, Pressable, TextInput } from 'react-native';
 const index = () => {
 
     const [wallpapers, setWallpapers] = useState<any[]>([]);
+    const api_key = "VbwtlQGuJvpleTQnpxxggojCQQbZEk2XsBIHCl26vKYHXTAZ6gRoL4sF"
 
     const searchWallpapers = async(word: string) => {
         try{
@@ -17,7 +18,7 @@ const index = () => {
                 method: 'GET',
                 headers: {
                     'Content-Type': 'application/json',
-                    'Authorization': "vHGblEImlLfGsGN9FH3L68JqtAEoS7V2TPZoSlJ1lQd7qNMmq88U7h0x",
+                    'Authorization': api_key,
                 },
             });
 
@@ -36,7 +37,7 @@ const index = () => {
                 method: 'GET',
                 headers: {
                     'Content-Type': 'application/json',
-                    'Authorization': "vHGblEImlLfGsGN9FH3L68JqtAEoS7V2TPZoSlJ1lQd7qNMmq88U7h0x",
+                    'Authorization': api_key,
                 },
             });
 

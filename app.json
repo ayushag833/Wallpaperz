@@ -1,12 +1,14 @@
 {
   "expo": {
-    "name": "Wallpaper-App",
-    "slug": "Wallpaper-App",
+    "name": "Wallpaperz",
+    "slug": "Wallpaperz",
     "version": "1.0.0",
     "orientation": "portrait",
+    "icon": "./assets/icon.png",
     "scheme": "myapp",
     "userInterfaceStyle": "automatic",
     "splash": {
+      "image": "./assets/icon.png",
       "resizeMode": "contain",
       "backgroundColor": "#ffffff"
     },
@@ -14,15 +16,16 @@
       "supportsTablet": true
     },
     "android": {
-      "package": "com.ayush600.WallpaperApp",
+      "package": "com.ayush600.Wallpaperz",
       "adaptiveIcon": {
-       
+        "foregroundImage": "./assets/icon.png",
         "backgroundColor": "#ffffff"
       }
     },
     "web": {
       "bundler": "metro",
-      "output": "static"
+      "output": "static",
+      "favicon": "./assets/icon.png"
     },
     "plugins": [
       "expo-router"
@@ -33,9 +36,6 @@
     "extra": {
       "router": {
         "origin": false
-      },
-      "eas": {
-        "projectId": "cfbb19aa-8258-4e73-ac61-4e7cd4acfef6"
       }
     }
   }
