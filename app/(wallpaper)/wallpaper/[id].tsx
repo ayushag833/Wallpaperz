@@ -53,11 +53,7 @@ const Wallpaper = () => {
       const asset = await MediaLibrary.createAssetAsync(uri);
       await MediaLibrary.createAlbumAsync('Wallpaperz', asset! ,  false); 
   
-<<<<<<< HEAD
       Alert.alert("Done 🗿","Your image is saved to gallery")
-=======
-      Alert.alert("Saved to gallery")
->>>>>>> 622080e687d35d16b6a165d54240dd7db9341683
     } catch (error) {
       Alert.alert('An error occurred!');
       console.error('Error downloading or saving image:', error);
@@ -70,11 +66,7 @@ const Wallpaper = () => {
        <Image source={{uri: wallpaper}} style={{width: '100%', height: '100%' ,  resizeMode: 'cover'}}/>
         <TouchableOpacity onPress={saveFile} style={{
           position: 'absolute',
-<<<<<<< HEAD
           bottom: 50,
-=======
-          bottom: 20,
->>>>>>> 622080e687d35d16b6a165d54240dd7db9341683
           alignSelf: 'center',
           paddingVertical: 10,
           paddingHorizontal: 20,
